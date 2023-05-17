@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 
 const TodoForm = ({ addTodo }) => {
 
-    const [newItem, setNewItem] = useState('')
+    const [newItem, setNewItem] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         addTodo(newItem);
 
-        setNewItem('')
-    }
+        setNewItem('');
+    };
 
     return (
 
